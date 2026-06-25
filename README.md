@@ -36,6 +36,7 @@ pip install ultralytics
             └── labels/   # 驗證用 YOLO 標註文字檔
 ```
 ## 3.訓練模型 train_yolo.py
+訓練結束後，YOLOv8 會自動在你的專案底下建立一個 runs/detect/train/weights/ 資料夾，裡面有一顆 best.pt
 ### 程式碼
 ```bash
 from ultralytics import YOLO
@@ -67,10 +68,11 @@ python test_yolo.py
 ```
 
 ## 4.驗證模型 test_yolo.py
+要測試的圖片，丟到跟你的 Python 程式碼同一個資料夾底下。
 ### 程式碼
-from ultralytics import YOLO
 ```bash
-# 1. 載入親手訓練好的最強權重
+from ultralytics import YOLO
+# 1. 載入訓練好的最強權重
 model = YOLO("runs/detect/train/weights/best.pt")
 
 # 2. 進行物件偵測推論
@@ -92,5 +94,4 @@ print("偵測完成！結果已儲存為 my_yolo_result.jpg")
 ```bash
 python test_yolo.py
 ```
-## 預期結果
 
