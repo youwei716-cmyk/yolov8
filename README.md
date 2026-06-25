@@ -95,6 +95,8 @@ print("偵測完成！結果已儲存為 my_yolo_result.jpg")
 python test_yolo.py
 ```
 ## 預期結果
-
+### 原圖
+![原圖](example/7.jpg)
+### 辨識結果
 ![辨識結果](example/my_yolo_result.jpg)
 
