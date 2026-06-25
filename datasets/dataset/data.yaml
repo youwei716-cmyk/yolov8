@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['building']
+
+roboflow:
+  workspace: -mnmza
+  project: find-building-oddp3
+  version: dataset
+  license: Public Domain
+  url: https://universe.roboflow.com/-mnmza/find-building-oddp3/dataset/dataset
