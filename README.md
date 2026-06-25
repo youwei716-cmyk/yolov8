@@ -18,7 +18,8 @@ pip install torch torchvision torchaudio --index-url [https://download.pytorch.o
 
 # 安裝 YOLOv8 官方核心套件
 pip install ultralytics
-
+```bash
+## 📂 2. 資料集準備 (Dataset Structure)
 ├── train_yolo.py         # 訓練腳本
 ├── test_yolo.py          # 測試/推論腳本
 └── datasets/
