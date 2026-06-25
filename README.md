@@ -26,7 +26,7 @@ pip install ultralytics
 ├── train_yolo.py         # 訓練腳本
 ├── test_yolo.py          # 測試/推論腳本
 └── datasets/
-    └── 
+    └──dataset 
         ├── data.yaml     # 記錄類別名稱與 train/val 相對路徑的設定檔
         ├── train/
         │   ├── images/   # 訓練用大樓圖片 (.jpg / .png)
@@ -49,7 +49,7 @@ def main():
     
     # 開始訓練
     model.train(
-        data="datasets/building_dataset/data.yaml",  # 指定資料集設定檔
+        data="datasets/dataset/data.yaml",  # 指定資料集設定檔
         epochs=50,                                   # 訓練輪數
         imgsz=640,                                   # 圖片輸入解析度
         batch=4,                                     # CPU 記憶體安全批次量
