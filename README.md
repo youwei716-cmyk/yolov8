@@ -36,7 +36,7 @@ pip install ultralytics
             └── labels/   # 驗證用 YOLO 標註文字檔
 ```
 ## 3.訓練模型 train_yolo.py
-訓練結束後，YOLOv8 會自動在你的專案底下建立一個 runs/detect/train/weights/ 資料夾，裡面有一顆 best.pt
+訓練的時間有點長，如果單用cpu訓練的話至少要40分鐘。訓練結束後，YOLOv8 會自動在你的專案底下建立一個 runs/detect/train-?(可能是7，要自行修改)/weights/ 資料夾，裡面有一顆 best.pt
 ### 程式碼
 ```bash
 from ultralytics import YOLO
@@ -64,7 +64,7 @@ if __name__ == "__main__":
 ```
 ### 執行程式
 ```bash
-python test_yolo.py
+python train_yolo.py
 ```
 
 ## 4.驗證模型 test_yolo.py
