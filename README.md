@@ -1,8 +1,5 @@
 # yolov8
 # make_readme.py
-import os
-
-readme_content = """# 元智大學校園建築物物件偵測系統 (YZU Campus Building Detection)
 
 本專案基於 **YOLOv8-Nano** 輕量化架構，開發了一套能在純本機 CPU 環境下穩定運行的校園建築物自動辨識系統。專案內容包含從零構建自訂大樓資料集（以元智五館、三館為核心目標），並完成模型的微調訓練（Fine-tuning）與系統後處理優化。
 
