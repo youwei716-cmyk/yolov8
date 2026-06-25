@@ -26,7 +26,7 @@ pip install ultralytics
 ├── train_yolo.py         # 訓練腳本
 ├── test_yolo.py          # 測試/推論腳本
 └── datasets/
-    └── dataset/ 
+    └── 
         ├── data.yaml     # 記錄類別名稱與 train/val 相對路徑的設定檔
         ├── train/
         │   ├── images/   # 訓練用大樓圖片 (.jpg / .png)
